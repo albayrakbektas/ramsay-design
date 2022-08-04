@@ -1,11 +1,18 @@
 <template>
   <div class="fourth-right-container">
-    <h1>The best websites</h1>
+    <h1>
+      <span>The best</span>
+      <span>websites</span>
+    </h1>
     <p>
       From tree make green multiply, great greater is. Fruit fowl blessed. Unto
       of man greater spirit you’ll beginning.
     </p>
-    <RangeBar />
+    <div class="range-bars">
+      <RangeBar title="Mobile Design" percent="80" />
+      <RangeBar title="Coding" percent="70" />
+      <RangeBar title="Web Design" percent="60" />
+    </div>
   </div>
 </template>
 
@@ -17,9 +24,28 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .fourth-right-container {
   display: grid;
-  align-content: space-between;
+  align-content: space-evenly;
+  height: 100%;
+}
+h1 {
+  margin-block-start: 0;
+  span {
+    font-size: 3.5rem;
+  }
+  span:first-child {
+    color: #c32865;
+  }
+}
+span::after {
+  content: " ";
+}
+p {
+  color: #888888;
+  font-size: 14px;
+  line-height: 2;
+  font-family: Poppins, sans-serif;
 }
 </style>
