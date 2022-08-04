@@ -6,19 +6,19 @@
     <FourthSection class="section" />
     <div class="dots">
       <span
-        class="w3-badge demo w3-border w3-transparent w3-hover-white"
+        class="w3-badge demo w3-border w3-hover-white"
         @click="currentDiv(1)"
       ></span>
       <span
-        class="w3-badge demo w3-border w3-transparent w3-hover-white"
+        class="w3-badge demo w3-border w3-hover-white"
         @click="currentDiv(2)"
       ></span>
       <span
-        class="w3-badge demo w3-border w3-transparent w3-hover-white"
+        class="w3-badge demo w3-border w3-hover-white"
         @click="currentDiv(3)"
       ></span>
       <span
-        class="w3-badge demo w3-border w3-transparent w3-hover-white"
+        class="w3-badge demo w3-border w3-hover-white"
         @click="currentDiv(4)"
       ></span>
     </div>
@@ -62,10 +62,10 @@ export default {
         x[i].style.display = "none";
       }
       for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" w3-white", "");
+        dots[i].className = dots[i].className.replace(" active", "");
       }
       x[this.slideIndex - 1].style.display = "grid";
-      dots[this.slideIndex - 1].className += " w3-white";
+      dots[this.slideIndex - 1].className += " active";
     },
   },
 };
@@ -87,9 +87,11 @@ export default {
   height: 8px;
   width: 8px;
   padding: 0;
+  margin: auto;
 }
 .dots {
   display: inline-flex;
+  justify-self: center;
   column-gap: 1rem;
   position: absolute;
   right: calc(3rem - (13px / 2));
@@ -97,7 +99,13 @@ export default {
   z-index: 5;
   transform: rotate(90deg);
 }
-.w3-hover-white {
-  background-color: #ffffff !important;
+.w3-transparent {
+  background-color: unset !important;
+}
+.active {
+  color: #c32865;
+  background: #c32865;
+  height: 13px;
+  width: 13px;
 }
 </style>
