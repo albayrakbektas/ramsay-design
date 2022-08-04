@@ -83,7 +83,7 @@ a {
   top: 70px;
   left: 70px;
   bottom: 0;
-  font-size: 10rem;
+  font-size: 11rem;
   transform-origin: 50% 50%;
   transform: rotate(-90deg);
   /* Safari */
