@@ -36,9 +36,13 @@ export default {
   grid-template-columns: auto 1fr 1fr;
   grid-column-gap: 3rem;
   align-items: center;
-  justify-content: center;
+  justify-items: center;
 }
 .second-card {
-  padding-top: 2rem;
+  height: 100%;
+  align-content: center;
+}
+.rotate-text {
+  left: unset;
 }
 </style>
