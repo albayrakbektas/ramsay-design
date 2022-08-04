@@ -1,13 +1,19 @@
 <template>
-$END$
+  <div class="sections">
+    <FourthSection />
+  </div>
 </template>
 
 <script>
+import FourthSection from "@/sections/FourthSection";
 export default {
-name: "MainPage"
-}
+  name: "MainPage",
+  components: { FourthSection },
+};
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+.sections {
+  padding: 0 8rem;
+}
 </style>

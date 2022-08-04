@@ -1,20 +1,21 @@
 <template>
   <div class="third-section">
     <div class="bg-text">
-      <span class="rotate-text">Resume</span>
+      <span class="rotate-text">about us</span>
     </div>
-    <ResumeCard resume-type="Education" :course="course" />
+    <ExperienceCard />
     <div class="second-card">
-      <ResumeCard resume-type="Education" :course="course" />
+      <BestWebSites />
     </div>
   </div>
 </template>
 
 <script>
-import ResumeCard from "@/components/ResumeCard";
+import ExperienceCard from "@/components/ExperienceCard";
+import BestWebSites from "@/components/BestWebSites";
 export default {
-  name: "ThirdSection",
-  components: { ResumeCard },
+  name: "FourthSection",
+  components: { BestWebSites, ExperienceCard },
   data() {
     return {
       course: {
@@ -34,7 +35,8 @@ export default {
   display: grid;
   grid-template-columns: auto 1fr 1fr;
   grid-column-gap: 3rem;
-  overflow-y: scroll;
+  align-items: center;
+  justify-content: center;
 }
 .second-card {
   padding-top: 2rem;
