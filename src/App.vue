@@ -84,6 +84,7 @@ a {
   left: 70px;
   bottom: 0;
   font-size: 11rem;
+  font-weight: bold;
   transform-origin: 50% 50%;
   transform: rotate(-90deg);
   /* Safari */
