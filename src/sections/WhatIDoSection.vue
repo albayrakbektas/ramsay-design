@@ -59,7 +59,7 @@ h2 {
   }
 }
 .main-content {
-  padding: 0 2rem;
+  padding: 0 70px;
   position: relative;
 }
 </style>
