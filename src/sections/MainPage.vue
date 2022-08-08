@@ -4,6 +4,11 @@
     <SecondSection class="section" />
     <ThirdSection class="section" />
     <FourthSection class="section" />
+    <FifthSection class="section" />
+    <SixthSection class="section" />
+    <SeventhSection class="section" />
+    <ArticlesSection class="section" />
+    <ContactSection class="section" />
     <div class="dots">
       <span
         class="w3-badge demo w3-border w3-hover-white"
@@ -21,18 +26,53 @@
         class="w3-badge demo w3-border w3-hover-white"
         @click="currentDiv(4)"
       ></span>
+      <span
+        class="w3-badge demo w3-border w3-hover-white"
+        @click="currentDiv(5)"
+      ></span>
+      <span
+        class="w3-badge demo w3-border w3-hover-white"
+        @click="currentDiv(6)"
+      ></span>
+      <span
+        class="w3-badge demo w3-border w3-hover-white"
+        @click="currentDiv(7)"
+      ></span>
+      <span
+        class="w3-badge demo w3-border w3-hover-white"
+        @click="currentDiv(8)"
+      ></span>
+      <span
+        class="w3-badge demo w3-border w3-hover-white"
+        @click="currentDiv(9)"
+      ></span>
     </div>
   </div>
 </template>
 
 <script>
-import FourthSection from "@/sections/FourthSection";
-import FirstSection from "@/sections/FirstSection";
-import SecondSection from "@/sections/SecondSection";
-import ThirdSection from "@/sections/ThirdSection";
+import FourthSection from "@/sections/AboutUsSection";
+import FirstSection from "@/sections/MeSection";
+import SecondSection from "@/sections/WhatIDoSection";
+import ThirdSection from "@/sections/ResumeSection";
+import FifthSection from "@/sections/MyWorksSection";
+import SixthSection from "@/sections/PartnersSection";
+import SeventhSection from "@/sections/ReviewsSection";
+import ArticlesSection from "@/sections/ArticlesSection";
+import ContactSection from "@/sections/ContactSection";
 export default {
   name: "MainPage",
-  components: { ThirdSection, SecondSection, FirstSection, FourthSection },
+  components: {
+    ContactSection,
+    ArticlesSection,
+    SeventhSection,
+    SixthSection,
+    FifthSection,
+    ThirdSection,
+    SecondSection,
+    FirstSection,
+    FourthSection,
+  },
   data() {
     return {
       slideIndex: 1,
