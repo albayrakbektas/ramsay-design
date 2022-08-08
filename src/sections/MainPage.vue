@@ -130,14 +130,14 @@ export default {
   margin: auto;
 }
 .dots {
-  display: inline-flex;
+  display: grid;
+  grid-template-rows: repeat(9, 1fr);
   justify-self: center;
-  column-gap: 1rem;
+  gap: 1rem;
   position: absolute;
-  right: calc(3rem - (13px / 2));
-  top: 50%;
+  right: calc(5rem - (13px / 2));
+  top: calc(50% - 6rem);
   z-index: 5;
-  transform: rotate(90deg);
 }
 .w3-transparent {
   background-color: unset !important;
