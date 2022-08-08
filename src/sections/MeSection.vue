@@ -1,11 +1,15 @@
 <template>
   <div class="first-section">
     <div class="content">
-      <h1 class="purple">Howdy,</h1>
-      <h1>I'm</h1>
+      <h1 class="purple">
+        <span>Howdy,</span>
+        <span> I'm</span>
+      </h1>
+      <br />
       <h1>Ramsay</h1>
     </div>
     <div class="resume">
+      <hr />
       <div class="play-circle">
         <span class="material-symbols-outlined"> play_arrow </span>
       </div>
@@ -21,6 +25,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.first-section {
+  position: relative;
+}
 .content {
   display: grid;
   grid-template-columns: auto auto;
@@ -30,11 +37,20 @@ export default {
 }
 h1 {
   font-size: 6.54rem;
-  line-height: 0;
+  line-height: 1;
   font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  span:first-child {
+    color: #c32865;
+  }
 }
 .material-symbols-outlined {
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+hr {
+  position: fixed;
+  left: 0;
+  width: 5vw;
 }
 .resume {
   display: grid;
@@ -49,8 +65,10 @@ h1 {
     .material-symbols-outlined,
     .watch-resume {
       color: #c32865;
+      transition: all 0.2s ease-in 0s;
     }
     .play-circle {
+      transition: all 0.2s ease-in 0s;
       border-color: #c32865;
     }
   }
