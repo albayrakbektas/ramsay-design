@@ -9,9 +9,9 @@
       of man greater spirit you’ll beginning.
     </p>
     <div class="range-bars">
-      <RangeBar title="Mobile Design" percent="80" />
+      <RangeBar title="Mobile Design" percent="90" />
       <RangeBar title="Coding" percent="70" />
-      <RangeBar title="Web Design" percent="60" />
+      <RangeBar title="Web Design" percent="80" />
     </div>
   </div>
 </template>
