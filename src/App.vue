@@ -36,6 +36,12 @@ body {
   margin: 0;
   box-sizing: border-box;
   background-color: #1b1b1b;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: scroll;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
