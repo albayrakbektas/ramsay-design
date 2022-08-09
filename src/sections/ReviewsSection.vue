@@ -27,20 +27,20 @@
         :key="index"
       />
     </div>
-    <div class="dots">
-      <span
-        class="w3-badge demo w3-border w3-hover-white"
-        @click="currentDiv(1)"
-      ></span>
-      <span
-        class="w3-badge demo w3-border w3-hover-white"
-        @click="currentDiv(2)"
-      ></span>
-      <span
-        class="w3-badge demo w3-border w3-hover-white"
-        @click="currentDiv(3)"
-      ></span>
-    </div>
+    <!--    <div class="dots">-->
+    <!--      <span-->
+    <!--        class="w3-badge demo w3-border w3-hover-white"-->
+    <!--        @click="currentDiv(1)"-->
+    <!--      ></span>-->
+    <!--      <span-->
+    <!--        class="w3-badge demo w3-border w3-hover-white"-->
+    <!--        @click="currentDiv(2)"-->
+    <!--      ></span>-->
+    <!--      <span-->
+    <!--        class="w3-badge demo w3-border w3-hover-white"-->
+    <!--        @click="currentDiv(3)"-->
+    <!--      ></span>-->
+    <!--    </div>-->
   </div>
 </template>
 
@@ -96,35 +96,35 @@ export default {
       ],
     };
   },
-  mounted() {
-    this.showDivs(this.slideIndex);
-  },
+  // mounted() {
+  //   this.showDivs(this.slideIndex);
+  // },
   methods: {
-    plusDivs(n) {
-      this.showDivs((this.slideIndex += n));
-    },
-    currentDiv(n) {
-      this.showDivs((this.slideIndex = n));
-    },
-    showDivs(n) {
-      let i;
-      let x = document.getElementsByClassName("slider");
-      let dots = document.getElementsByClassName("demo");
-      if (n > x.length) {
-        this.slideIndex = 1;
-      }
-      if (n < 1) {
-        this.slideIndex = x.length;
-      }
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      x[this.slideIndex - 1].style.display = "grid";
-      dots[this.slideIndex - 1].className += " active";
-    },
+    //   plusDivs(n) {
+    //     this.showDivs((this.slideIndex += n));
+    //   },
+    //   currentDiv(n) {
+    //     this.showDivs((this.slideIndex = n));
+    //   },
+    //   showDivs(n) {
+    //     let i;
+    //     let x = document.getElementsByClassName("slider");
+    //     let dots = document.getElementsByClassName("demo");
+    //     if (n > x.length) {
+    //       this.slideIndex = 1;
+    //     }
+    //     if (n < 1) {
+    //       this.slideIndex = x.length;
+    //     }
+    //     for (i = 0; i < x.length; i++) {
+    //       x[i].style.display = "none";
+    //     }
+    //     for (i = 0; i < dots.length; i++) {
+    //       dots[i].className = dots[i].className.replace(" active", "");
+    //     }
+    //     x[this.slideIndex - 1].style.display = "grid";
+    //     dots[this.slideIndex - 1].className += " active";
+    //   },
   },
 };
 </script>
